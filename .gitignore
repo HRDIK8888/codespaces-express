@@ -1,7 +1,6 @@
 node_modules/
-.gitignore generator
-Create useful .gitignore files for your project
-Jul 15, 2021 | 36392 views
+.env
+
 
  
  # Logs
