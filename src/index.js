@@ -1,15 +1,16 @@
-const express = require(express);
-const app = express();
-
-const port = 3000 
-
-app.get("/",(req,res) => {
-    res.send("Hardik")
-});
-
-app.listen(port);
+import dotenv from "dotenv"
 
 
+import { connect, Mongoose } from "mongoose";
+import { DB_NAME } from "./constant"
+import { connectDB } from "./db/index.js";
 
+dotenv.config({
+ path: './env'
+
+})
+
+
+connectDB()
 
 
